@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF3C99EB29005BE900255155 /* CharacterDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3C99EA29005BE900255155 /* CharacterDetailViewController.swift */; };
+		FF557D1E29006ABD00E12A78 /* ServiceRequestingImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF557D1D29006ABD00E12A78 /* ServiceRequestingImageView.swift */; };
+		FF557D2B2901AA8400E12A78 /* CharacterDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF557D292901AA8400E12A78 /* CharacterDetail.storyboard */; };
+		FF557D2F2901ABCD00E12A78 /* CharacterList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF557D2D2901ABCD00E12A78 /* CharacterList.storyboard */; };
 		FF6B9CC528FDBD5100F1CFFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6B9CC428FDBD5100F1CFFF /* AppDelegate.swift */; };
 		FF6B9CC728FDBD5100F1CFFF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6B9CC628FDBD5100F1CFFF /* SceneDelegate.swift */; };
 		FF6B9CCC28FDBD5100F1CFFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF6B9CCA28FDBD5100F1CFFF /* Main.storyboard */; };
@@ -18,9 +22,15 @@
 		FF6B9CE328FDCADA00F1CFFF /* CharacterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6B9CE228FDCADA00F1CFFF /* CharacterTableViewController.swift */; };
 		FF6B9CE528FDCAF500F1CFFF /* CharacterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6B9CE428FDCAF500F1CFFF /* CharacterTableViewCell.swift */; };
 		FF6B9CE828FDDB2A00F1CFFF /* CharacterListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6B9CE728FDDB2900F1CFFF /* CharacterListViewModel.swift */; };
+		FF6B9D1828FF099700F1CFFF /* CharacterSearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6B9D1728FF099700F1CFFF /* CharacterSearchService.swift */; };
+		FF6B9D1A28FF0F0000F1CFFF /* SearchedCharacterEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6B9D1928FF0F0000F1CFFF /* SearchedCharacterEndpoint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FF3C99EA29005BE900255155 /* CharacterDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewController.swift; sourceTree = "<group>"; };
+		FF557D1D29006ABD00E12A78 /* ServiceRequestingImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceRequestingImageView.swift; sourceTree = "<group>"; };
+		FF557D2A2901AA8400E12A78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Rick&MortyMVVM/Storyboards/Base.lproj/CharacterDetail.storyboard"; sourceTree = "<group>"; };
+		FF557D2E2901ABCD00E12A78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Rick&MortyMVVM/Storyboards/Base.lproj/CharacterList.storyboard"; sourceTree = "<group>"; };
 		FF6B9CC128FDBD5100F1CFFF /* Rick&MortyMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rick&MortyMVVM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF6B9CC428FDBD5100F1CFFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF6B9CC628FDBD5100F1CFFF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -34,6 +44,8 @@
 		FF6B9CE228FDCADA00F1CFFF /* CharacterTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTableViewController.swift; sourceTree = "<group>"; };
 		FF6B9CE428FDCAF500F1CFFF /* CharacterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTableViewCell.swift; sourceTree = "<group>"; };
 		FF6B9CE728FDDB2900F1CFFF /* CharacterListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListViewModel.swift; sourceTree = "<group>"; };
+		FF6B9D1728FF099700F1CFFF /* CharacterSearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSearchService.swift; sourceTree = "<group>"; };
+		FF6B9D1928FF0F0000F1CFFF /* SearchedCharacterEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchedCharacterEndpoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +59,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FF557D2C2901AAA800E12A78 /* CharacterDetail */ = {
+			isa = PBXGroup;
+			children = (
+				FF557D292901AA8400E12A78 /* CharacterDetail.storyboard */,
+				FF3C99EA29005BE900255155 /* CharacterDetailViewController.swift */,
+			);
+			path = CharacterDetail;
+			sourceTree = "<group>";
+		};
 		FF6B9CB828FDBD5100F1CFFF = {
 			isa = PBXGroup;
 			children = (
@@ -71,6 +92,7 @@
 				FF6B9CDA28FDC0D200F1CFFF /* Model */,
 				FF6B9CE128FDC7C600F1CFFF /* Networking */,
 				FF6B9CE628FDDAD500F1CFFF /* Character List */,
+				FF557D2C2901AAA800E12A78 /* CharacterDetail */,
 			);
 			path = "Rick&MortyMVVM";
 			sourceTree = "<group>";
@@ -108,6 +130,8 @@
 			children = (
 				FF6B9CDD28FDC1E100F1CFFF /* APIService.swift */,
 				FF6B9CDF28FDC20900F1CFFF /* ResultError.swift */,
+				FF6B9D1728FF099700F1CFFF /* CharacterSearchService.swift */,
+				FF6B9D1928FF0F0000F1CFFF /* SearchedCharacterEndpoint.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -116,8 +140,10 @@
 			isa = PBXGroup;
 			children = (
 				FF6B9CE728FDDB2900F1CFFF /* CharacterListViewModel.swift */,
-				FF6B9CE228FDCADA00F1CFFF /* CharacterTableViewController.swift */,
 				FF6B9CE428FDCAF500F1CFFF /* CharacterTableViewCell.swift */,
+				FF557D1D29006ABD00E12A78 /* ServiceRequestingImageView.swift */,
+				FF6B9CE228FDCADA00F1CFFF /* CharacterTableViewController.swift */,
+				FF557D2D2901ABCD00E12A78 /* CharacterList.storyboard */,
 			);
 			path = "Character List";
 			sourceTree = "<group>";
@@ -181,7 +207,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF6B9CD128FDBD5400F1CFFF /* LaunchScreen.storyboard in Resources */,
+				FF557D2B2901AA8400E12A78 /* CharacterDetail.storyboard in Resources */,
 				FF6B9CCE28FDBD5400F1CFFF /* Assets.xcassets in Resources */,
+				FF557D2F2901ABCD00E12A78 /* CharacterList.storyboard in Resources */,
 				FF6B9CCC28FDBD5100F1CFFF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -193,6 +221,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF3C99EB29005BE900255155 /* CharacterDetailViewController.swift in Sources */,
 				FF6B9CE028FDC20900F1CFFF /* ResultError.swift in Sources */,
 				FF6B9CE528FDCAF500F1CFFF /* CharacterTableViewCell.swift in Sources */,
 				FF6B9CE328FDCADA00F1CFFF /* CharacterTableViewController.swift in Sources */,
@@ -200,13 +229,32 @@
 				FF6B9CE828FDDB2A00F1CFFF /* CharacterListViewModel.swift in Sources */,
 				FF6B9CC528FDBD5100F1CFFF /* AppDelegate.swift in Sources */,
 				FF6B9CC728FDBD5100F1CFFF /* SceneDelegate.swift in Sources */,
+				FF6B9D1828FF099700F1CFFF /* CharacterSearchService.swift in Sources */,
 				FF6B9CD928FDBD7C00F1CFFF /* Character.swift in Sources */,
+				FF557D1E29006ABD00E12A78 /* ServiceRequestingImageView.swift in Sources */,
+				FF6B9D1A28FF0F0000F1CFFF /* SearchedCharacterEndpoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		FF557D292901AA8400E12A78 /* CharacterDetail.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF557D2A2901AA8400E12A78 /* Base */,
+			);
+			name = CharacterDetail.storyboard;
+			sourceTree = "<group>";
+		};
+		FF557D2D2901ABCD00E12A78 /* CharacterList.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF557D2E2901ABCD00E12A78 /* Base */,
+			);
+			name = CharacterList.storyboard;
+			sourceTree = "<group>";
+		};
 		FF6B9CCA28FDBD5100F1CFFF /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
